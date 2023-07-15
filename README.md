@@ -12,7 +12,7 @@ We Are Here To Break barriers!
 
 ## Preview
 
-<img src="aployed-home.png" alt="">
+<img src="public/images/aployed-home.png" alt="">
 <br>
 <img src="1.png" alt="">
 <br>
@@ -26,19 +26,24 @@ In a population of approximately 60.6 million people in South Africa, 32.6% is t
 
 ## Technical requirements
 
-- Language: Python
-- Framework: Django
-- Coding environment: virtual environment
-- Design: HTML
-- Style: CSS
+-   Language: PHP
+-   Framework: Laravel
+-   Package manager: Composer
+-   Project manager: PHP artisan
+-   Mark-Up: HTML
+-   Style: CSS
+-   Templating: Blade
 
 ## How to run the project
 
-- Given django is installed
-- Given virtual environment is activated
-- On your terminal project directory type:
-  `python manage.py runserver`
-- On your browser type: `https://localhost:5000`
+-   Clone repo
+-   Insure you have PHP and composer installed
+-   Run composer update
+-   Rename file in base directory from prototypeEnv to .env
+-   Create an sql database with the name aployed
+-   import the provided .sql to avoid running make migrations commands
+-   To start server run `php artisan serve`
+-   In your browser type: `https://localhost:8000`
 
 ### Breaking barriers
 
