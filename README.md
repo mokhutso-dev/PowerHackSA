@@ -1,8 +1,22 @@
-# Aployed web app
+# Aployed
+
+Apployed is a web application platform that is designed to be aplatform that empoer African youth to start building their own
+
+It will minimise drug abuse and cirminal offense from the African youth and equip them with tech skills to give them an oportunity get and to create jobs.
+
+By that South African unemployeed rate drops
+Everyone needs a hobby
+
+Everyone needs a hooby
+We Are Here To Break barriers!
 
 ## Preview
 
-image here
+<img src="aployed-home.png" alt="">
+<br>
+<img src="1.png" alt="">
+<br>
+<img src="2.png" alt="" >
 
 ## Problem Statement
 
