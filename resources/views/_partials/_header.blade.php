@@ -16,6 +16,7 @@
                     <a href="#">Profile</a>
                     <a href="#">Saved</a>
                     <a href="#">Settings</a>
+                    <a href="user/logout">Logout</a>
                 @else
                     <a href="/auth/login">Login</a>
                 @endif

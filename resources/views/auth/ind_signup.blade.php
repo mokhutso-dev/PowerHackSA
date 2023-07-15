@@ -1,4 +1,7 @@
 @extends('auth')
+@section('title')
+    Register
+@endsection
 @section('link_redirect')
     <div class="help d-flex center-content">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-question-circle"
@@ -12,9 +15,10 @@
     <a href="/auth/login" class="m-auto">Log In</a>
 @endsection
 @section('auth_content')
-    <form action="/customer/signup/individual" class="sign-ind-form d-flex wrap j-sb m-auto" method="post">
+    <form action="/user/signup/" class="sign-ind-form d-flex wrap j-sb m-auto" method="post">
         @csrf
         <h1> SIGN UP</h1><br>
+
         <div class="flex-col wrap">
             <label for="email">Email address </label>
             <input type="text" name="email" value="{{ old('email') }}">
@@ -25,20 +29,27 @@
         <div class="flex-col wrap">
             <label for="first_name">First Name </label>
             <input type="text" name="first_name" value="{{ old('first_name') }}">
-
+            @error('first_name')
+                <div class="error">{{ $message }}</div>
+            @enderror
         </div>
         <div class="flex-col wrap">
             <label for="last_name">Last Name </label>
             <input type="text" name="last_name" value="{{ old('last_name') }}">
+            @error('last_name')
+                <div class="error">{{ $message }}</div>
+            @enderror
         </div>
         <div class="flex-col wrap">
             <label for="phone">Phone</label>
-            <input type="phone" name="phone">
+            <input type="phone" name="phone" value="{{ old('phone') }}">
         </div>
         <div class="flex-col wrap">
             <label for="password">Password</label>
             <input type="password" name="password" class="sign-password">
-
+            @error('password')
+                <div class="error">{{ $message }}</div>
+            @enderror
         </div>
 
         <div class="flex-col wrap">
@@ -48,7 +59,10 @@
                 <div class="error">{{ $message }}</div>
             @enderror
         </div>
-        <a href="/auth/login" style="padding: 10px 0px;">Have an account? Login</a>
+        <div class="" style="padding: 10px 0px;">
+            <a href="/auth/login">Have an account? Login</a>
+
+        </div>
 
         <button class="sign-up-form-btn d-flex center-content ">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-lock"

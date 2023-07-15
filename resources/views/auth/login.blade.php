@@ -1,4 +1,7 @@
 @extends('auth')
+@section('title')
+    Login
+@endsection
 @section('link_redirect')
     Don't have an account?
     <a href="/auth/signup">Sign up</a>
@@ -15,7 +18,7 @@
         </script>
     @endif
 
-    <form action="/customer/signin/individual" class="login-form flex-col j-sa m-auto" method="post">
+    <form action="/user/signin" class="login-form flex-col j-sa m-auto" method="post">
         <h3> LOG IN</h3>
         @csrf
         <p>

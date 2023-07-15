@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ asset('css/auth/const.css') }}">
     <link rel="stylesheet" href="{{ asset('css/auth/signup.css') }}">
     <link rel="stylesheet" href="{{ asset('css/auth/admin.css') }}">
-    <title>Login</title>
+    <title>@yield('title')</title>
 </head>
 
 <body>

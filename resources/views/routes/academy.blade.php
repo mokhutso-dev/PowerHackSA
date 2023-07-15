@@ -1,4 +1,7 @@
 @extends('main')
+@section('title')
+    Academy
+@endsection
 @section('content')
     <!-- Content here -->
     <div class="name-paragraph">
@@ -39,6 +42,19 @@
             </p>
             <p style="font-weight: bolder">Application still open</p>
             <a class="academy-link" href="https://www.thedigitalacademy.co.za/">more info...</a>
+        </div>
+    </div>
+
+    <div class="name-paragraph">
+        <div class="name-message">
+            <img src="/images/ALX.png" alt="" />
+            <h2 class="">ALX</h2>
+            <p class="">
+                Claim Your Place in the New Global Digital Workforce <br>
+                At ALX, our programmes are designed to prepare you for a career in the world’s fastest growing industries.
+            </p>
+            <p style="font-weight: bolder">Application still open</p>
+            <a class="academy-link" href="https://www.alxafrica.com/">more info...</a>
         </div>
     </div>
 
