@@ -101,16 +101,20 @@ display: block;
 .w-message{
     margin: 1.5rem 
 }
+.about-btn{
+  text-decoration: none;
+}
+.about-btn:hover{
+  font-weight: bolder;
+}
 
 /* Content here  */
-
 div.gallery {
     border: 1px solid #ccc;
-  }
-  
-  div.gallery:hover {
+}
+div.gallery:hover {
     border: 1px solid #777;
-  }
+}
   
   div.gallery img {
     width: 100%;
@@ -152,8 +156,8 @@ div.gallery {
   }
 
 .link{
-    text-align: right;
-    color: yellowgreen;
+    color: purple;
+    text-decoration: none;
 }
 
 /* Footer  */
